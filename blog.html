@@ -1,0 +1,493 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css">
+      <title>The Goalie Mask Project</title>
+    </head>
+    <body>
+      <!-- ********************************** Nav Bar**************************-->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light text-dark bg-white">
+        <a href="index.html"><img src="img/longLogo.png" class="navbar-brand longLogo" alt="Logo"></a>
+        <a href="index.html"><img src="img/logo.svg" class="navbar-brand svgLogo" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="players.html">Players</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teams.html">Teams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="news-container">
+        <div class="newsHead newsHeader">
+          <h1 class="maskNews">Blog</h1>
+          <p>Player Highlights, Opinions, And More.</p>
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for blog post..">
+        </div>
+        <ul id="myUL" class="myUL">
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="SzabadosPH">Shannon Szabados</h3>
+              <img class="card-img-top" src="img/szabados-masks.jpg" alt="Szabados' Mask">
+              <div class="card-body">
+                <p class="card-text">Shannon Szabados aims to complete the hat trick of Olympic gold medals, after Team Canada's defeat
+                    during the 2018 Winter Olympics in PyongChang. Szabados, one ...</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel1">Player Profile</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Shannon Szabados</h3>
+                    <img class="card-img-top" src="img/szabados-masks.jpg" alt="Szabados' Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Shannon Szabados aims to complete the hat trick of Olympic gold medals, after Team Canada's
+                          defeat during the 2018 Winter Olympics in PyongChang. Szabados, one of the most recognizable goaltenders in
+                            world, aims to get her third gold when Team Canada goes back to the 2022 Olympics. Until then, she will
+                        continue to play for the NWHL's Buffalo beauts. During the NWHL's 4th All Star Game, Szabados was named 
+                          one of the team captains along with Lee Stecklein. The future is bright for the NWHL with Szabados in net.<br>
+                        <strong>Favorite Player Growing Up:</strong>  "Angela James, and Patrick Roy."<br>
+                        <strong>Favorite Memory:</strong>"My first Olympic Gold, standing up on the podium."<br>
+                        <strong>Interesting Mask Fact:</strong> "I have 'FLM' on my mask to remind to 'Fight Like Matt', a sledge hockey player I know."
+                      </p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="AebischerPH">David Aebischer</h3>
+              <img class="card-img-top" src="img/aebischer.jpg" alt="Aebischer's Mask">
+                <div class="card-body">
+                  <p class="card-text">Being called up to be a backup for the first time is always a nerve racking experience, but 
+                    never moreso when the goalie you're backing up is the legendary Patrick Roy. This is...</p>
+                  <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#seventhModal">Read More</button>
+                </div>
+              </div>
+              <div class="modal fade" id="seventhModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel2">Player Highlight</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>David Aebischer</h3>
+                    <img class="card-img-top" src="img/aebischer.jpg" alt="Aebischer's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Being called up to be a backup for the first time is always a nerve racking experience, but 
+                              never moreso when the goalie you're backing up is the legendary Patrick Roy. This is exactly what happened to
+                              David Aebischer in 2000 when the Avalanche traded Marc Denis to the Blue Jackets. Aebischer enjoyed a good
+                              career, even starting in the 2004 playoffs for Colorado, before being traded to montreal for Joe Theodore. 
+                              He would eventually bounce around between Montreal, Phoenix, and Winnipeg, before going to play overseasHC 
+                              Thurgau..<br>
+                          <strong>Favorite Player Growing Up:</strong>  "Probably Hextall (Laughs)."<br>
+                          <strong>Favorite Memory:</strong>"Getting drafted 161st overall by the Avs."<br>
+                          <strong>Interesting Mask Fact:</strong> "I always have maple leafs on my mask, to remind me where I'm from."</p>
+                      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="TurcoPH">Marty Turco</h3>
+              <img class="card-img-top" src="img/turcoProfile.jpg" alt="Turco's Mask">
+              <div class="card-body">
+                <p class="card-text">Marty Turco was <i>the</i> guy in net for the Dallas Stars for a number of years. After 
+                  Modano, when you thought of Dallas hockey, you thought Turco. After taking over the net in 2001 when Ed...</p>
+                <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secondModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel3">Player Highlight</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Marty Turco</h3>
+                    <img class="card-img-top" src="img/turcoProfile.jpg" alt="Turco's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Marty Turco was <i>the</i> guy in net for the Dallas Stars for a number of years. After 
+                              Modano, when you thought of Dallas hockey, you thought Turco. After taking over the net in 2001 when Ed
+                              Belfour decided to sign in Toronto, Turco's GAA of 1.72 set a modern day record, and even had 3 shutouts 
+                              in 7  playoff games, unfortunately losing the series after his teammates couldn't produce enough goal 
+                              scoring opportunities. After leaving Dallas, Turco signed with Chicago to take over for the departing
+                              Antii Niemi, and later signed as second backup with the Bruins.<br>
+                      <strong>Favorite Player Growing Up:</strong>  "Hasek, Dominator for sure."<br>
+                      <strong>Favorite Memory:</strong>"Winning the Stanley Cup."<br>
+                      <strong>Interesting Mask Fact:</strong> "I love the gargoyles on my mask.
+                      </p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="PricePH">Carey Price</h3>
+              <img class="card-img-top" src="img/price.jpg" alt="Price's Mask">
+              <div class="card-body">
+                <p class="card-text">Carey Price is waiting for his first Stanley Cup. He doesn't know when or where it'll come from,
+                    but he hopes it's in Montreal. "y'know, I've just signed a long term contract with...</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thirdModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="thirdModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel4">Player Highlight</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Carey Price</h3>
+                    <img class="card-img-top" src="img/price.jpg" alt="Price's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Carey Price is waiting for his first Stanley Cup. He doesn't know when or where it'll come from,
+                                but he hopes it's in Montreal. "y'know, I've just signed a long term contract with the habs to be here a while, 
+                              and I'd love to bring a Cup to Montreal and the boys here, everyday I see them working so hard." Carey Price has
+                              been hailed as the next Patrick Roy ever since being drafted fifth overall in 2005, and expectations have never 
+                              been higher now that Price is seen as a grizzled vet and not a fresh faced rookie.<br>
+                        <strong>Favorite Player Growing Up:</strong>  "Roy, of course, but also Andy Moog."<br>
+                        <strong>Favorite Memory:</strong>"Winning gold at the Olympics"<br>
+                        <strong>Interesting Mask Fact:</strong> "I usually try to add some cowboy elements to my mask, but it's pretty heavily Canadiens stuff."</p>
+                      <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Blog</span>
+              </div>
+              <h3 id="OtherMasksBlog">The Other Masks</h3>
+              <img class="card-img-top" src="img/dumbMasks.jpg" alt="Dumb Masks">
+              <div class="card-body">
+                <p class="card-text">One of the more interesting things you might notice with the infamous Detroit-Colorado
+                    rivalries of the 90s/00s was the unique goalie mask that both Osgood and Hasek wore...</p>
+                <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fourthModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel5">Blog</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>The Other Masks</h3>
+                    <img class="card-img-top" src="img/dumbMasks.jpg" alt="Dumb Masks">
+                    <div class="card-body">
+                      <p class="card-text ">One of the more interesting things you might notice with the infamous Detroit-Colorado
+                              rivalries of the 90s/00s was the unique goalie mask that both Osgood and Hasek wore. Or maybe when Tim Thomas
+                              was winning the Stanley Cup in 2011 you may have seen him take a puck of his player helmet with a non-cat's 
+                              eye goalie cage. Well, after exhaustive study and researcg, which totally wasn't just calling up each player
+                              and asking about it, we've found that these goalies use them not because they feel any safer wearing them, 
+                              but because of comfort. Osgood finds they feel more comfortable than the traditional goalie mask, while 
+                              Hasek and Thomas say they've been using the same mask style since they were kids, and they just prefer them.
+                      </p> 
+                      <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="RaskPH">Tuukka Rask</h3>
+              <img class="card-img-top" src="img/rask.jpg" alt="Rask's Mask">
+              <div class="card-body">
+                <p class="card-text">Can you imagine a world where Tuukka Rask is wearing Maple Leaf blue? Well, it almost
+                      happened, when Rask was drafted by Toronto 21st overall in the 2005 NHL entry...</p>
+                <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fifthModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="fifthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel6">Player Highlight</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Tuukka Rask</h3>
+                    <img class="card-img-top" src="img/rask.jpg" alt="Rask's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Can you imagine a world where Tuukka Rask is wearing Maple Leaf blue? Well, it almost
+                                  happened, when Rask was drafted by Toronto 21st overall in the 2005 NHL entry draft. His rights were
+                                    traded to Boston in exchange for Andrew Raycroft. Since then, Rask has backstopped the Bruins to two
+                                    Stanley Cup appearances, whiel Raycroft has, uh, not. In 2019, Rask passed Tiny Thompson's franchise
+                                      record of games started by a goalie in Bruin's history with his 469th game. Internationally, the 
+                                      Finnish Rask helped Team Finland to two Bronze medals.<br>
+                                  <strong>Favorite Player Growing Up:</strong>  "Kiprusoff, for sure. Toskala also."<br>
+                                  <strong>Favorite Memory:</strong>"Celebrating and lifting the Stanley Cup."<br>
+                                  <strong>Interesting Mask Fact:</strong> "I've had pretty much the same Bruin on my mask since I was signed. His name's Barry."</p>
+                      <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Player Highlight</span>
+              </div>
+              <h3 id="FleuryPH">Marc-Andre Fleury</h3>
+              <img class="card-img-top" src="img/fleury.jpg" alt="Fleury's Mask">
+              <div class="card-body">
+                <p class="card-text">Being drafted first overall will always bring high expectations.It's safe to say 
+                  Fleury has lived up to all of them, leading the Penguins to four Stanley Cup appearances, including...</p>
+                <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sixthModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="sixthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel7">Player Highlight</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Marc-Andre Fleury</h3>
+                    <img class="card-img-top" src="img/fleury.jpg" alt="Fleury's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">Being drafted first overall will always bring high expectations.It's safe to say 
+                                Fleury has lived up to all of them, leading the Penguins to four Stanley Cup appearances, including
+                                three wins, and another appearance with the Vegas Golden Knights. Fleury was integral to leading
+                                the Pens to a consistantly good record, staying atop the Metropolitan division, and being a 
+                                constant threat in the playoffs. During the 2017 expansion draft, Fleury was sent to the desert 
+                                and hasn't slowed down since, leading the surprising Knights into the playoffs, and all the way
+                                  to the Finals. He currently sits fifth all time for NHL wins by a goalie.<br>
+                              <strong>Favorite Player Growing Up:</strong>  "Martin Brodeur, and Real Cloutier."<br>
+                              <strong>Favorite Memory:</strong>"The birth of my son. Or the First Stanley Cup."<br>
+                              <strong>Interesting Mask Fact:</strong> "I have '57' on my mask to honor the victims of the Mandalay Bay shootings."</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card newsCard mb-3">
+              <div class="badge-holder">
+                <span class="badge badge-pill badge-primary badge-font">Blog</span>
+              </div>
+              <h3 id="CoalieChooseBlog">Why Goalies Choose Their Art</h3>
+              <img class="card-img-top" src="img/luongoBW.jpg" alt="Luongo's Mask">
+              <div class="card-body">
+                <p class="card-text">The question is simple, but the answers weren't: Why do goalies get whay they do painted 
+                    on their masks? Basically, after talking to several net minders, the answers were incredibly varied....</p>
+                <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eighthModal">Read More</button>
+              </div>
+            </div>
+            <div class="modal fade" id="eighthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel8">News</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Why Goalies Choose Their Art</h3>
+                    <img class="card-img-top" src="img/luongoBW.jpg" alt="Luongo's Mask">
+                    <div class="card-body">
+                      <p class="card-text ">The question is simple, but the answers weren't: Why  do goalies get whay they do painted 
+                                on their masks? Basically, after talking to several net minders, the answers were incredibly varied. The 
+                                majority of them are personal, putting family on the sides, or their beliefs. It's not uncommon to see
+                                scripture that spoke to them referenced on the mask. However, the higher in professional leagues you get,
+                                  the more say the team has, often times nixing what the goalie wants. For example, Montreal has often told
+                                  Carey Price he can't have more cowboy references on his masks, making them more "team-centric". Same for
+                                    the late Ray Emery, who had the infamous Mike Tyson on his mask for a short while, before the Flyers 
+                                    asked him to take it off. Typically, the masks at the NHL level are almost entirely at least approved
+                                    before even being painted, though how much teams care can vary from team to team. Roberto Luongo had
+                                    an incredibly complicated and detailed mask during his time in Vancouver, however when he went back to 
+                                    Florida, he was allowed to go a lot more simple, reigning in the design to show off a basic panther 
+                                    symbol and gold stripes.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+       </ul>
+      </div>
+      <footer>
+        <div class="footWhole">
+          <div class="light-foot">
+            <div class="cluster">
+              <div class="links">
+                <h4><span class="dot"></span>Links<span class="dot"></span></h4>
+                <a href="http://www.goaliesarchive.com/" target="_blank">Goalie Archive</a><br>
+                <a href="https://www.hockey-reference.com/players/s/goalies.html" target="_blank">Goalie Register</a><br>
+                <a href="http://www.nhl.com/stats/" target="_blank">NHL Goalie Stats</a><br>
+                <a href="https://www.usahockeygoaltending.com/page/show/866192-goaltender-basics" target="_blank">Learn To Play</a>
+              </div>
+              <div class="gear">
+                <h4><span class="dot"></span>Gear<span class="dot"></span></h4>
+                <a href="https://ccmhockey.com/en/goalie/customizers" target="_blank">CCM</a><br>
+                <a href="https://www.goalies-only.com/" target="_blank">Brians</a><br>
+                <a href="https://www.bauer.com/en-US/goalie-hockey-gear/" target="_blank">Bauer</a><br>
+                <a href="https://www.goaliemonkey.com/" target="_blank">Goalie Monkey</a>
+              </div>
+              <div class="contact">
+                <h4><span class="dot"></span>Contact<span class="dot"></span></h4>
+                <a href="mailto:johnsawebdev@gmail.com" target="_blank">Email</a><br>
+                <a href="https://www.linkedin.com/in/john-lovato-4295b3199/" target="_blank">LinkedIn</a><br>
+                <a href="http://github.com/jtLovato/" target="_blank">Github</a><br>
+                <a href="https://johntlovato.myportfolio.com/" target="_blank">Design Portfolio</a>
+              </div>
+            </div>
+            <div class="signupForm">
+              <form action="action_page.php">
+                <div class="signup">
+                  <h4>Subscribe to our Newsletter</h4>
+                  <p>We Won't Sell Your Info, Not Even For The Stanley Cup</p>
+                  <div class="signupInputs">
+                    <input class="signupField" type="text" placeholder="Email address" name="mail" required>
+                    <input type="submit" value="Subscribe">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr class="break">
+          <div class="svgfoot">
+            <a href="#" target="_blank">
+              <img src="img/jtl.svg" alt="Home Icon">
+            </a>
+            <a href="#" target="_blank"> 
+              <img src="img/planet.svg" alt="Planet Icon">
+            </a>
+            <h6 class="otherProjects">My Other Projects</h6>
+            <a href="#" target="_blank">
+              <img src="img/cover.svg" alt="Cover Icon">
+            </a>
+            <a href="#" target="_blank">
+              <img src="img/honee.svg" alt="Honee Icon">
+            </a>
+          </div>
+          <div class="bottomFoot">
+            <div class="linkGroup">
+              <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms And Conditions</a>
+              <a href="https://www.termsfeed.com/blog/sample-privacy-policy-template/">Privacy Policy</a>
+            </div>
+            <p>&#169; 2020 John Lovato</p>
+          </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/news_scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Goalie Mask Project</title>
+  </head>
+  <body>
+    <!-- ********************************** Nav Bar**************************-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light text-dark bg-white">
+      <a href="index.html"><img src="img/longLogo.png" class="navbar-brand longLogo" alt="Logo"></a>
+      <a href="index.html"><img src="img/logo.svg" class="navbar-brand svgLogo" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="players.html">Players</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ****************************** Main Content ************************ -->
+    <div class="news-container">
+      <div class="newsHead newsHeader">
+        <h1 class="maskNews">News</h1>
+        <p>The latest happenings in the world of goalie masks</p>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for news..">
+      </div>
+      <ul id="myUL" class="myUL">
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="NewYorkMasks">New Masks in New York</h3>
+            <img class="card-img-top" src="img/rangers-masks.jpg" alt="Ranger's New Masks">
+            <div class="card-body">
+              <p class="card-text">New year, new masks in New York. Goaltenders Henrik Lundqvist and backup Igor Shestyorkin both debut new masks during the first game of the 2020-21 season. Lundqvist...</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel1">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>New Masks in New York</h3>
+                  <img class="card-img-top" src="img/rangers-masks.jpg" alt="Ranger's New Masks">
+                  <div class="card-body">
+                    <p class="card-text ">New year, new masks in New York. Goaltenders Henrik Lundqvist and backup Igor Shestyorkin
+                          both debut new masks during the first game of the 2020-21 season. Lundqvist, keeping in tradition with his
+                          previous themes, went with a spiked crown, calling back to his Swedish homeland, with the Rangers shield
+                            on the side of the helmet. Shestyorkin on the other hand, decided to go a little more modern, with an 
+                            image of Marvel's Venom in Rangers red and blue. Rangers goalie coach Benoit Allaire has said that both
+                            goaltenders changing styles will hopefully signal a change in net, seeing as how the Rag's previous 
+                            season went less than great.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+              <span class="badge badge-pill badge-primary badge-font">Video</span> 
+            </div>
+            <h3 id="HartsMasks">Hart Shows Off New Mask</h3>
+            <img class="card-img-top" src="img/hart.jpg" alt="Hart's Mask">
+            <div class="card-body">
+              <p class="card-text">After a rookie year where he finished 16-13-1, Carter Hart returns to the Flyers for his sophmore year with a new mask. Hart, a Marvel fan, showcases the mask...</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#seventhModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="seventhModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel2">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Hart Shows Off New Mask</h3>
+                  <iframe class="card-img-top" width="420" height="315" src="https://youtube.com/embed/dzHFoQcJQUM"> </iframe>
+                  <div class="card-body">
+                    <p class="card-text ">After a rookie year where he finished 16-13-1, Carter Hart returns to the Flyers 
+                      for his sophmore year with a new mask. Hart, a Marvel fan, showcases the mask which has the character
+                        Venom and his enemy Carnage, done in Flyers black and orange.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="CheeversMaskSells">Cheevers Mask Sells For Record</h3>
+            <img class="card-img-top" src="img/cheevers.jpg" alt="Cheevers' Mask">
+            <div class="card-body">
+              <p class="card-text">Arguably the most famous mask ever worn in hockey history has a new home. And it comes at an extremely high price. Collector Daniel Wickenheiser has snatched up the mask once...</p>
+              <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secondModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel3">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Cheevers Mask Sells For Record</h3>
+                  <img class="card-img-top" src="img/cheevers.jpg" alt="Cheevers' Mask">
+                  <div class="card-body">
+                    <p class="card-text ">Arguably the most famous mask ever worn in hockey history has a new home. And it comes 
+                        at an extremely high price. Collector Daniel Wickenheiser has snatched up the mask once worn by Boston 
+                        Bruins goalie Gerry Cheevers at a private auction held by Lelands Sports Memorabilia and Card Auctions
+                          for a whopping $3.4 million dollars USD. Wickenheiser has said it will stay in his private collection 
+                          and will not be moved again. Wickenheiser, 54, has a collection of over 150 game used masks, many used
+                          in the NHL. His collection can be found
+                            <a href="https://www.nhlgoaliemasks.net/" target="_blank">here.</a></p>
+                    <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="BrodeurSigns">Brodeur Autograph Session In NJ</h3>
+            <img class="card-img-top" src="img/brodeurCup.jpg" alt="Brodeur Lifting Stanley Cup">
+            <div class="card-body">
+              <p class="card-text">Hockey Hall Of Fame goalie Martin Brodeur will be signing autographs this upcoming thursday, August 27th at the Nike Factory Store in the Mills at Jersey Gardens. The signings will...</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thirdModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="thirdModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel4">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Brodeur Autograph Session In NJ</h3>
+                  <img class="card-img-top" src="img/brodeurCup.jpg" alt="Brodeur Lifting Stanley Cup">
+                  <div class="card-body">
+                    <p class="card-text ">Hockey Hall Of Fame goalie Martin Brodeur will be signing autographs this upcoming
+                          thursday, August 27th at the Nike Factory Store in the Mills at Jersey Gardens. The signings will 
+                          begin at 10:00 AM EST and will go to 1:30 PM, wherein there will be a half hour break, followed by 
+                          fan photos from 2:00 PM to 4:00 PM. Prices for signings will be $40.00 for small items, $60.00 for 
+                          large items, photos are $50.00 each, or $80.00 for both. Photos and sticks are avaliable for purchase 
+                          at the store. Please only bring items related to the New Jersey Devils Hockey Club. Any items can be 
+                          declined to be autographed or photographed at Mr. Brodeur's discretion. </p>
+                    <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="CocoMovieDebuts">Movie Based On Fuhr's Life To Debut</h3>
+            <img class="card-img-top" src="img/coco.jpg" alt="Making Coco Movie Poster">
+            <div class="card-body">
+              <p class="card-text">One of the more fascinating stories in NHL history, Sportsnet will be debuting a documentary about the life and career of former Oilers goaltender Grant Fuhr, on channel 217 in...</p>
+              <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fourthModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel5">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Movie Based On Fuhr's Life To Debut</h3>
+                  <img class="card-img-top" src="img/coco.jpg" alt="Making Coco Movie Poster">
+                  <div class="card-body">
+                    <p class="card-text ">One of the more fascinating stories in NHL history, Sportsnet will be debuting a 
+                        documentary about the life and career of former Oilers goaltender Grant Fuhr, on channel 217 in Canada. 
+                        Arriving on the big NHL stage at the age of 19 quickly established himself as one of the league's greats,
+                         backstopping the Oilers to a dynsaty that is only matched by the 1976-1979 Islanders. With special guests
+                          from Wayne Gretzky, Mark Messier, and an interview with Fuhr himself, <i>Coco</i> dives into a retirement
+                           threat at the age of 26, a demotion to the minors after calling Edmonton fans "Jerks", and a year-long 
+                           suspension from the NHL for substance abuse, only to return and become the ultimate money goalie. </p>
+                    <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="HowardDonation">Howard Donates For Breast Cancer</h3>
+            <img class="card-img-top" src="img/howard.jpg" alt="Howard's Mask">
+            <div class="card-body">
+              <p class="card-text">Detroit Red Wings goaltender Jimmy Howard is donating the pink mask he wore during a 5-2 loss to the Colorado Avalanche to the Michigan Center For Breast Cancer Research based ...</p>
+              <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fifthModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="fifthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel6">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Howard Donates For Breast Cancer</h3>
+                  <img class="card-img-top" src="img/howard.jpg" alt="Howard's Mask">
+                  <div class="card-body">
+                    <p class="card-text ">Detroit Red Wings goaltender Jimmy Howard is donating the pink mask he wore during
+                           a 5-2 loss to the Colorado Avalanche to the Michigan Center For Breast Cancer Research based in Grand 
+                           Rapids. The MCBCR is expected to put the mask up for auction, with all proceeds going to the study of
+                            and elimation of breast cancer. Click <a href="https://www.abcf.org/" target="_blank">here</a> for more 
+                            info. Howard, who lost his mother-in-law to breast cancer two years ago, has been helping the MCBCR 
+                            for several years.</p>
+                    <p class="card-text"><small class="text-muted">Last updated last month</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="OettingerUSA">Oettinger Leads USA</h3>
+            <img class="card-img-top" src="img/oettinger.jpg" alt="Oettinger's Mask">
+            <div class="card-body">
+              <p class="card-text">ake Oettinger backstopped Team USA to gold at the U-21 International Tournament in Wisconsin, making 27 saves for a shutout, and a 3-0 win over Team Sweden. Oettinger, who...</p>
+              <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sixthModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="sixthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel7">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3>Oettinger Leads USA</h3>
+                  <img class="card-img-top" src="img/oettinger.jpg" alt="Oettinger's Mask">
+                  <div class="card-body">
+                    <p class="card-text ">Jake Oettinger backstopped Team USA to gold at the U-21 International Tournament
+                         in Wisconsin, making 27 saves for a shutout, and a 3-0 win over Team Sweden. Oettinger, who was drafted
+                                by the Dallas Stars 26th overall in the 2017 draft, is projected to the Stars' goalie of the future,
+                                 and finished the tournament 8-1-1 with a GAA of 1.89 and two shutouts. Oettinger said after the win 
+                                 "My team did a great job in front of me, clearing pucks and giving me the best view at all the incoming shots."</p>
+                    <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card newsCard mb-3">
+            <div class="badge-holder">
+              <span class="badge badge-pill badge-primary badge-font">News</span>
+            </div>
+            <h3 id="HHOFMasks">HHOF Masks On The Move</h3>
+            <img class="card-img-top" src="img/hhofmasks.jpg" alt="Hockey Hall Of Fame Masks">
+            <div class="card-body">
+              <p class="card-text">The Hockey Hall Of Fame Masks display will be on tour this upcoming autumn, starting from it's home in Toronto and ending t's international cross-country tour in ...</p>
+              <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eighthModal">Read More</button>
+            </div>
+          </div>
+          <div class="modal fade" id="eighthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="badge badge-pill badge-primary modal-title badge-font" id="exampleModalLabel8">News</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="badge-holder">
+                  </div>
+                </div>
+                <h3>HHOF Masks On The Move</h3>
+                <img class="card-img-top" src="img/hhofmasks.jpg" alt="Hockey Hall Of Fame Masks">
+                <div class="card-body">
+                  <p class="card-text ">The Hockey Hall Of Fame Masks display will be on tour this upcoming autumn, starting 
+                        from it's home in Toronto and ending t's international cross-country tour in San Diego, CA. The tour will
+                        be in a mobile van that will see 17 stops, 6 in Canasda and 11 in America. The tour, previously halted
+                          prematurely due to the coronavirus pandemic, was originally sated to begin in March of 2020.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- End Of Content Container -->
+    <footer>
+      <div class="footWhole">
+        <div class="light-foot">
+          <div class="cluster">
+            <div class="links">
+              <h4><span class="dot"></span>Links<span class="dot"></span></h4>
+              <a href="http://www.goaliesarchive.com/" target="_blank">Goalie Archive</a><br>
+              <a href="https://www.hockey-reference.com/players/s/goalies.html" target="_blank">Goalie Register</a><br>
+              <a href="http://www.nhl.com/stats/" target="_blank">NHL Goalie Stats</a><br>
+              <a href="https://www.usahockeygoaltending.com/page/show/866192-goaltender-basics" target="_blank">Learn To Play</a>
+            </div>
+            <div class="gear">
+              <h4><span class="dot"></span>Gear<span class="dot"></span></h4>
+              <a href="https://ccmhockey.com/en/goalie/customizers" target="_blank">CCM</a><br>
+              <a href="https://www.goalies-only.com/" target="_blank">Brians</a><br>
+              <a href="https://www.bauer.com/en-US/goalie-hockey-gear/" target="_blank">Bauer</a><br>
+              <a href="https://www.goaliemonkey.com/" target="_blank">Goalie Monkey</a>
+            </div>
+            <div class="contact">
+              <h4><span class="dot"></span>Contact<span class="dot"></span></h4>
+              <a href="mailto:johnsawebdev@gmail.com" target="_blank">Email</a><br>
+              <a href="https://www.linkedin.com/in/john-lovato-4295b3199/" target="_blank">LinkedIn</a><br>
+              <a href="http://github.com/jtLovato/" target="_blank">Github</a><br>
+              <a href="https://johntlovato.myportfolio.com/" target="_blank">Design Portfolio</a>
+            </div>
+          </div>
+          <div class="signupForm">
+            <form action="action_page.php">
+              <div class="signup">
+                <h4>Subscribe to our Newsletter</h4>
+                <p>We Won't Sell Your Info, Not Even For The Stanley Cup</p>
+                <div class="signupInputs">
+                  <input class="signupField" type="text" placeholder="Email address" name="mail" required>
+                  <input type="submit" value="Subscribe">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="break">
+        <div class="svgfoot">
+          <a href="#" target="_blank">
+            <img src="img/jtl.svg" alt="Home Icon">
+          </a>
+          <a href="#" target="_blank"> 
+            <img src="img/planet.svg" alt="Planet Icon">
+          </a>
+          <h6 class="otherProjects">My Other Projects</h6>
+          <a href="#" target="_blank">
+            <img src="img/cover.svg" alt="Cover Icon">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/honee.svg" alt="Honee Icon">
+          </a>
+        </div>
+        <div class="bottomFoot">
+          <div class="linkGroup">
+            <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms And Conditions</a>
+            <a href="https://www.termsfeed.com/blog/sample-privacy-policy-template/">Privacy Policy</a>
+          </div>
+          <p>&#169; 2020 John Lovato</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/news_scripts.js"></script>
+  </body>
+</html>

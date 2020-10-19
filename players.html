@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="css/addons/datatables.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>The Goalie Mask Project</title>
+    </head>
+    <body>
+    <!-- ********************************** Nav Bar**************************-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light text-dark bg-white">
+        <a href="index.html"><img src="img/longLogo.png" class="navbar-brand longLogo" alt="Logo"></a>
+        <a href="index.html"><img src="img/logo.svg" class="navbar-brand svgLogo" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="seperate">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Players</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- **************************** Content Start ***************** -->
+        <div class="newsHead playersHeader">
+            <h1 class="maskNews">Players</h1>
+            <p>Find Masks By Your Favorite Goalie</p>
+        </div>
+        <div class="player-container" style="overflow-x:auto;">
+            <table id="dtBasicExample" class="table table-striped table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th class="th-sm">Name
+                        </th>
+                        <th class="th-sm">Main NHL Team
+                        </th>
+                        <th class="th-sm">Birthday
+                        </th>
+                        <th class="th-sm">Birthplace
+                        </th>
+                        <th class="th-sm">W
+                        </th>
+                        <th class="th-sm">L
+                        </th>
+                        <th class="th-sm">T
+                        </th>
+                        <th class="th-sm">GAA
+                        </th>
+                        <th class="th-sm">S%
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--  **********************TEMPLATE FOR MORE***************** -->
+                    <!-- 
+                    <tr>     
+                        <td> <a href=""> </a></td>
+                        <td> </td>
+                        <td>99/99/9999</td>
+                        <td>Germany</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>.</td>
+                        <td>0.9</td>
+                    </tr> 
+                -->
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=29051">Aebischer, David</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>02/07/1978</td>
+                    <td>Switzerland</td>
+                    <td>106</td>
+                    <td>74</td>
+                    <td>17</td>
+                    <td>2.52</td>
+                    <td>0.912</td>
+                </tr>
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=126409">Aittokallio, Sami</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>07/06/1992</td>
+                    <td>Finland</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>99.99</td>
+                    <td>0.987</td>
+                </tr>
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=42354">Anderson, Craig</a></td>
+                    <td>Ottawa Senators</td>
+                    <td>05/21/1981</td>
+                    <td>USA</td>
+                    <td>289</td>
+                    <td>251</td>
+                    <td>69</td>
+                    <td>2.84</td>
+                    <td>0.913</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=80398">Bernier, Jonathan</a></td>
+                    <td>Detroit Red Wings</td>
+                    <td>07/07/88</td>
+                    <td>Canada</td>
+                    <td>152</td>
+                    <td>148</td>
+                    <td>38</td>
+                    <td>2.76</td>
+                    <td>0.912</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=84109">Berra, Reto</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>01/03/1987</td>
+                    <td>Switzerland</td>
+                    <td>20</td>
+                    <td>36</td>
+                    <td>4</td>
+                    <td>2.85</td>
+                    <td>0.905</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=42354">Billington, Craig</a></td>
+                    <td>New Jersey Devils</td>
+                    <td>09/11/1966</td>
+                    <td>Canada</td>
+                    <td>106</td>
+                    <td>140</td>
+                    <td>30</td>
+                    <td>3.55</td>
+                    <td>0.879</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=50274">Budaj, Peter</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>09/18/1982</td>
+                    <td>Slovakia</td>
+                    <td>158</td>
+                    <td>133</td>
+                    <td>40</td>
+                    <td>2.70</td>
+                    <td>0.904</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=19320">Denis, Marc</a></td>
+                    <td>Columbus Blue Jackets</td>
+                    <td>08/01/1977</td>
+                    <td>Canada</td>
+                    <td>112</td>
+                    <td>179</td>
+                    <td>31</td>
+                    <td>3.02</td>
+                    <td>0.902</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=72686">Elliott, Brian</a></td>
+                    <td>Philadelphia Flyers</td>
+                    <td>04/09/1989</td>
+                    <td>Canada</td>
+                    <td>242</td>
+                    <td>146</td>
+                    <td>47</td>
+                    <td>2.50</td>
+                    <td>0.912</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=1685">Fiset, Stephane</a></td>
+                    <td>Los Angeles Kings</td>
+                    <td>06/17/1970</td>
+                    <td>Canada</td>
+                    <td>164</td>
+                    <td>153</td>
+                    <td>44</td>
+                    <td>.3.07</td>
+                    <td>0.899</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=115982">Francouz, Pavel</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>06/09/1990</td>
+                    <td>Czech Republic</td>
+                    <td>22</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>2.32</td>
+                    <td>0.925</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=16003">Giguere, Jean-Sebastien</a></td>
+                    <td>Anaheim Ducks</td>
+                    <td>05/16/1977</td>
+                    <td>Canada</td>
+                    <td>262</td>
+                    <td>216</td>
+                    <td>75</td>
+                    <td>2.53</td>
+                    <td>0.913</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=112814">Grubauer, Philipp</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>11/25/1991</td>
+                    <td>Germany</td>
+                    <td>82</td>
+                    <td>52</td>
+                    <td>21</td>
+                    <td>2.42</td>
+                    <td>0.920</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=113948">Hammond, Andrew</a></td>
+                    <td>Ottawa Senators</td>
+                    <td>02/11/1988</td>
+                    <td>Canada</td>
+                    <td>27</td>
+                    <td>15</td>
+                    <td>6</td>
+                    <td>2.31</td>
+                    <td>0.923</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=90134">Kolesnik, Vitaly</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>08/20/1979</td>
+                    <td>Khazakstan</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.24</td>
+                    <td>0.888</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=145070">Martin, Spencer</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>06/08/1995</td>
+                    <td>Canada</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>4.31</td>
+                    <td>0.865</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=110237">Pickard, Calvin</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>04/15/1992</td>
+                    <td>Canada</td>
+                    <td>32</td>
+                    <td>52</td>
+                    <td>9</td>
+                    <td>3.00</td>
+                    <td>0.905</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=31782">Raycroft, Andrew</a></td>
+                    <td>Boston Bruins</td>
+                    <td>05/04/1980</td>
+                    <td>Canada</td>
+                    <td>113</td>
+                    <td>114</td>
+                    <td>27</td>
+                    <td>2.89</td>
+                    <td>0.900</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=4688">Roy, Patrick</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>10/05/1965</td>
+                    <td>Canada</td>
+                    <td>551</td>
+                    <td>315</td>
+                    <td>131</td>
+                    <td>2.54</td>
+                    <td>0.910</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=15580">Salo, Tommy</a></td>
+                    <td>Edmonton Oilers</td>
+                    <td>02/01/1971</td>
+                    <td>Sweden</td>
+                    <td>210</td>
+                    <td>225</td>
+                    <td>73</td>
+                    <td>2.55</td>
+                    <td>0.905</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=29599">Sauve, Philippe</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>02/27/1980</td>
+                    <td>USA</td>
+                    <td>10</td>
+                    <td>14</td>
+                    <td>3</td>
+                    <td>3.45</td>
+                    <td>0.888</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=93403">Smith, Jeremy</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>04/13/1989</td>
+                    <td>USA</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>3.52</td>
+                    <td>0.888</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=5290">Tabaracci, Rick</a></td>
+                    <td>Calgary Flames</td>
+                    <td>1/2/1969</td>
+                    <td>Canada</td>
+                    <td>93</td>
+                    <td>125</td>
+                    <td>30</td>
+                    <td>2.99</td>
+                    <td>0.893</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=14080">Theodore, Jose</a></td>
+                    <td>Montreal Canadiens</td>
+                    <td>09/13/1976</td>
+                    <td>Canada</td>
+                    <td>286</td>
+                    <td>253</td>
+                    <td>69</td>
+                    <td>2.68</td>
+                    <td>0.909</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=5371">Thibault, Jocelyn</a></td>
+                    <td>Chicago Blackhawks</td>
+                    <td>01/12/1975</td>
+                    <td>Germany</td>
+                    <td>238</td>
+                    <td>238</td>
+                    <td>75</td>
+                    <td>2.75</td>
+                    <td>0.904</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=89271">Varlamov, Semyon</a></td>
+                    <td>New York Islanders</td>
+                    <td>04/27/1988</td>
+                    <td>Russia</td>
+                    <td>238</td>
+                    <td>184</td>
+                    <td>56</td>
+                    <td>2.66</td>
+                    <td>0.916</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=55478">Weiman, Tyler</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>06/05/1984</td>
+                    <td>Canada</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>1.000</td>
+                </tr> 
+
+                <tr>     
+                    <td> <a href="https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=122756">Will, Roman</a></td>
+                    <td>Colorado Avalanche</td>
+                    <td>05/22/1992</td>
+                    <td>Czech Republic</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3.33</td>
+                    <td>0.667</td>
+                </tr> 
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name
+                        </th>
+                        <th>Main NHL Team
+                        </th>
+                        <th>Birthday
+                        </th>
+                        <th>Birthplace
+                        </th>       
+                        <th>W
+                        </th>
+                        <th>L
+                        </th>
+                        <th>T
+                        </th>
+                        <th>GAA
+                        </th>
+                        <th>S%
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- *********************End Of Player Content ******************** -->
+        <footer>
+            <div class="footWhole">
+                <div class="light-foot">
+                    <div class="cluster">
+                        <div class="links">
+                            <h4><span class="dot"></span>Links<span class="dot"></span></h4>
+                            <a href="http://www.goaliesarchive.com/" target="_blank">Goalie Archive</a><br>
+                            <a href="https://www.hockey-reference.com/players/s/goalies.html" target="_blank">Goalie Register</a><br>
+                            <a href="http://www.nhl.com/stats/" target="_blank">NHL Goalie Stats</a><br>
+                            <a href="https://www.usahockeygoaltending.com/page/show/866192-goaltender-basics" target="_blank">Learn To Play</a>
+                        </div>
+                        <div class="gear">
+                            <h4><span class="dot"></span>Gear<span class="dot"></span></h4>
+                            <a href="https://ccmhockey.com/en/goalie/customizers" target="_blank">CCM</a><br>
+                            <a href="https://www.goalies-only.com/" target="_blank">Brians</a><br>
+                            <a href="https://www.bauer.com/en-US/goalie-hockey-gear/" target="_blank">Bauer</a><br>
+                            <a href="https://www.goaliemonkey.com/" target="_blank">Goalie Monkey</a>
+                        </div>
+                        <div class="contact">
+                            <h4><span class="dot"></span>Contact<span class="dot"></span></h4>
+                            <a href="mailto:johnsawebdev@gmail.com" target="_blank">Email</a><br>
+                            <a href="https://www.linkedin.com/in/john-lovato-4295b3199/" target="_blank">LinkedIn</a><br>
+                            <a href="http://github.com/jtLovato/" target="_blank">Github</a><br>
+                            <a href="https://johntlovato.myportfolio.com/" target="_blank">Design Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="signupForm">
+                        <form action="action_page.php">
+                            <div class="signup">
+                                <h4>Subscribe to our Newsletter</h4>
+                                <p>We Won't Sell Your Info, Not Even For The Stanley Cup</p>
+                                <div class="signupInputs">
+                                    <input type="text" placeholder="Email address" name="mail" required>
+                                    <input type="submit" value="Subscribe">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="break">
+                <div class="svgfoot">
+                    <a href="#" target="_blank">
+                        <img src="img/jtl.svg" alt="Home Icon">
+                    </a>
+                    <a href="#" target="_blank"> 
+                        <img src="img/planet.svg" alt="Planet Icon">
+                    </a>
+                    <h6 class="otherProjects">My Other Projects</h6>
+                    <a href="#" target="_blank">
+                        <img src="img/cover.svg" alt="Cover Icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/honee.svg" alt="Honee Cover">
+                    </a>
+                </div>
+                <div class="bottomFoot">
+                    <div class="linkGroup">
+                        <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms And Conditions</a>
+                        <a href="https://www.termsfeed.com/blog/sample-privacy-policy-template/">Privacy Policy</a>
+                    </div>
+                    <p>&#169; 2020 John Lovato</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/addons/datatables.min.js"></script>
+        <script src="js/players_scripts.js"></script>
+    </body>
+</html>

@@ -271,7 +271,6 @@ footer h4 {
 }
 .signupForm {
     width: 100%;
-    margin-left:;
 }
 
   input[type=text], input[type=submit] {
@@ -769,10 +768,4 @@ table.dataTable thead .sorting_desc_disabled:before {
     .bottomFoot {
         width: 100%;
     }
-
-
-
-
-
-
-
+}
